@@ -69,7 +69,7 @@ The front end was made using React, and Redux for managing application states. A
 
 
 ## - Quick Start
-- Clone repository <a href="https://github.com/francopizzi/videogamesAppLocalHost">Repository</a>, because this repository has the back end routes changed for de deployment
+- Clone <a href="https://github.com/francopizzi/videogamesAppLocalHost">Repository</a>, because this repository has the back end routes changed for the deployment
 - You must create a data base in postgres call videogames
 - Run the next commands on the folders /api  & /client
 - npm install
