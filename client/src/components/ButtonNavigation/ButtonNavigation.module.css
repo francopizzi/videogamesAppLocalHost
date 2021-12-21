@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+.btn {
+    background-color: #70e000;
+    color: black;
+    width:50%;
+    height: 1.7rem;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    margin: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+
+    padding-right: 1rem
+}
+
+.btn:hover {
+    background-color: #bc00dd;
+    color: white;
+    cursor: pointer;
+}
+
+
+.btnActive {
+    background-color: black;
+    width: 50%;
+    height: 1.7rem;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    margin: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    padding-right: 1rem
+}

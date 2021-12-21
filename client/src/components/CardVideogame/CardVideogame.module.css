@@ -1,0 +1,111 @@
+.card {
+    justify-self: stretch;
+    font-size: 10px;
+    display: grid;
+    grid-template-rows: 200px 300px;
+    grid-template-columns: 1fr;
+
+    background-color: #bc00dd;
+    border-color: transparent;
+    border: 0px;
+    border-radius: 1rem;
+    
+}
+
+.img {
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+.deco {
+    text-decoration: none;
+}
+
+.nameGenres {
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 90px 10px  100px
+}
+
+.name {
+    
+    grid-row: 1;
+    
+    font-family: 'Bangers', cursive;
+    font-size: 1.55rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 1rem;
+    border-bottom: solid white;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.titleGenre {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.genres {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+    width:100%;
+    height: 100%;
+
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: repeat(2 , 50px);  /* aca tenia puesto 0.5fr */
+    grid-template-columns: repeat(3 ,1fr); /* aca tenia puesto 0.33 fr*/
+    
+    text-align: center;
+}
+
+.genre {
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .card {
+        grid-template-rows: 150px 225px;
+    }
+    .nameGenres {
+        grid-template-rows: 67.5px 7.5px  75px
+    }
+    .name {
+        font-size: 1.1rem;
+    }
+    .titleGenre {
+        font-size: 0.75rem;
+    }
+    .genres {
+        font-size: 0.5rem;
+        grid-template-rows: repeat(2 , 37.5px); 
+    }
+
+}

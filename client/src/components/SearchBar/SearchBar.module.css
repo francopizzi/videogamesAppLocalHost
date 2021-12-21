@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap'); /*no la estoy usando*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+.div {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color:black;
+    
+    background-color: white;
+    width: 16em;
+    height: 1.7rem;
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+.input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Bungee', cursive;*/
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color:black;
+    padding-left: 10px;
+  }
+
+
+.btn {
+    background-color: #70e000;
+    color: black;
+    width: auto;
+    height: 1.7rem;
+    border-color: transparent;
+    border-radius: 1rem;
+    margin: 5%;
+    
+    font-family: 'Bangers', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #bc00dd;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .div {
+        width: 97vw;
+        /* background-color: #001D3D; */
+        justify-content: center;
+        /* margin-bottom: 1rem; */
+        padding-bottom: 1rem;
+    }
+    .input {
+        width: 14em;
+    }
+}

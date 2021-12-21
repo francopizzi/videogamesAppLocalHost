@@ -1,0 +1,245 @@
+.grid {
+    grid-row: 2/4;
+    grid-column: 3 / 7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.form {
+    grid-row: 1;
+    grid-column: 1/5;
+    display: grid;
+    /*grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;*/
+}
+
+.container {
+    background-color: #bc00dd;
+    border-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.label {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 0.25rem;
+}
+
+.error {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff3f;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-left: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color:black;
+    
+    background-color: white;
+    width: 45vw;
+    height: 1.7rem;
+    border-color: transparent;
+    border-radius: 1rem;
+
+    text-indent: 1rem;
+}
+
+.input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Bungee', cursive;*/
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color:black;
+}
+
+.select {
+    margin-top: 0.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+
+    width: 98.5%;
+    border-color: transparent;
+    /*border-radius: 1rem;*/
+    padding: 1rem;
+
+}
+
+
+.select::-webkit-scrollbar {
+    width: 12px;
+}
+
+.select::-webkit-scrollbar-thumb {
+    background-color: #70e000;
+    border-radius: 1rem;
+}
+
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color:black;
+    
+    background-color: white;
+    width: 98.5%;
+    height: 10rem;
+    border-color: transparent;
+    border-radius: 1rem;
+    /*overflow-y: scroll;*/
+    white-space: normal;
+    resize:none;
+
+    line-height: 1.4rem;
+}
+.description::placeholder {
+    padding-top:10px;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Bungee', cursive;*/
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color:black;
+}
+
+.description::-webkit-scrollbar {
+    width: 12px;
+}
+
+.description::-webkit-scrollbar-thumb {
+    background-color: #70e000;
+    border-radius: 1rem;
+}
+
+.bk {
+    resize:none;
+    height: 5rem;
+    line-height: 1.4rem;
+}
+
+.bk::placeholder {
+    padding-left: 10px;
+    padding-top:10px;
+}
+
+.bk::-webkit-scrollbar {
+    width: 12px;
+}
+
+.bk::-webkit-scrollbar-thumb {
+    background-color: #70e000;
+    border-radius: 1rem;
+}
+
+.imgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 200px;
+    height: 300px;
+    
+    margin-top: 0.5rem;
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+.btn {
+    color: black;
+    background-color: #70e000; 
+    width:25%;
+    height: 1.7rem;
+    border-color: transparent;
+    border-radius: 1rem;
+    margin: 1%;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #bc00dd;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    color: white;
+    background-color: #353434;
+    cursor:not-allowed;
+}
+
+.alert1 {
+    grid-row: 2/4;
+    grid-column: 3/7;
+}
+
+.alert2{
+    grid-row: 1;
+    grid-column: 1/5;
+}
+
+.gameOver {
+    font-family: 'VT323', monospace;
+    font-size: 4rem;
+    letter-spacing: 0.05rem;
+    color: #FF002B;
+    text-align: center;
+}
+
+.text {
+    font-family: 'VT323', monospace;
+    font-size: 2.5rem;
+    letter-spacing: 0.05rem;
+    color: white;
+    text-align: center;
+}
+
+.complete {
+    font-family: 'VT323', monospace;
+    font-size: 4rem;
+    letter-spacing: 0.05rem;
+    color: #058a26;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .grid {
+        grid-column: 2 / 8;
+    }
+    .input {
+        width: 67vw;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .grid {
+        grid-column: 1 / 9;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .input {
+        width: 72vw;
+    }
+}
