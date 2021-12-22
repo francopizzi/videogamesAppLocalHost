@@ -71,6 +71,14 @@ The front end was made using React, and Redux for managing application states. A
 ## - Quick Start
 - Clone <a href="https://github.com/francopizzi/videogamesAppLocalHost">Repository</a>, because this repository has the back end routes changed for the deployment
 - You must create a data base in postgres call videogames
+- You must create a file inside folder "api" with extension ".env". On this file you have to fill 4 variables that are principal for the proyect functionality. 
+          DB_USER= "yours data base user"
+          
+          DB_PASSWORD= "yours data base password"
+          
+          DB_HOST=localhost
+          
+          API_KEY="yours API KEY"
 - Run the next commands on the folders /api  & /client
 - npm install
 - npm start
